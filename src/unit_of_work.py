@@ -22,3 +22,7 @@ class UnitOfWork:
 
     def rollback(self):
         self.session.rollback()
+
+
+def get_unit_of_work():
+    return UnitOfWork()
